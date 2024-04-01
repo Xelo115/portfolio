@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "YoungSerif";
+    src: url(./font/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: "sharp";
+    src: url(./font/MedievalSharp-Regular.ttf);
+}
+@font-face {
+    font-family: "garamond";
+    src: url(./font/EBGaramond-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "garamondIt";
+    src: url(./font/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+* {
+    margin : 0 ; 
+    padding: 0;
+}
+body{
+    background: purple;
+}
+header{
+    text-align: center;
+    color: gold;
+    border: 1px;
+    position: relative;
+    font-family: "garamondIt";
+}
+main{
+    min-height: 150px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+h2:not(.classes ul li h2):not(.racestxt ul li h2){
+    text-align: center;
+    background-color: peachpuff;
+    border: 1px;
+    border-radius: 10px;
+    font-family: "garamond";
+}
+div p:not(.classes ul li p):not(.racestxt ul li p){
+    font-family: "garamond";
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 1px;
+    border-radius: 10px ;
+    background-color: white;
+    width: 80% auto;
+    margin: 10px;
+}
+div p span:not(.racestxt ul li p) {
+    font-family: "garamondIt";
+    font-style: bold;
+    font-size: 1.3rem;
+    color: blueviolet;
+}
+#classe {
+    position: relative;
+}
+#liste {
+    position: relative;
+}
+#liste ul{
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px;
+}
+
+#liste ul li{
+    list-style: none;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+#liste ul li img {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-content: center; 
+    width: 300px;
+    height: 300px;
+
+}
+.classes { 
+    position: absolute;
+    top: 0px;
+    right: 0px
+    
+}
+.classes ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: top;
+    border: 1px;
+    margin: 0;
+}
+.classes ul li {
+    box-sizing: border-box;
+    border: 1px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    list-style: none;
+    text-align: center;
+    background-color: (0, 0, 0, 0);
+    margin: 10px;
+    opacity: 0;
+    transition: 0.6s;
+    transform: translateY(25px);
+}
+.classes ul li h2{
+    background-color: none;
+    color: white;
+    margin-top: 10px;
+}
+.classes ul li p{
+    background-color: none;
+    color: white;
+    padding: 10%;
+    text-align: justify;
+}
+.classes ul li p a {
+    color: gold;
+}
+.classes ul li:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(0);
+}
+#races {
+    position: relative;
+}
+.racesimg {
+    position: relative;
+}
+.racesimg ul{
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px;
+}
+.racesimg ul li {
+    list-style: none;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+.racesimg ul li img {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-content: center; 
+    width: 300px;
+    height: 300px;
+}
+
+.racestxt { 
+    position: absolute;
+    top: 0px;
+    right: 0px
+    
+}
+.racestxt ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: top;
+    border: 1px;
+    margin: 0;
+}
+.racestxt ul li {
+    box-sizing: border-box;
+    border: 1px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    list-style: none;
+    text-align: center;
+    background-color: (0, 0, 0, 0);
+    margin: 10px;
+    opacity: 0;
+    transition: 0.6s;
+    transform: translateY(25px);
+}
+.racestxt ul li h2{
+    background-color: none;
+    color: white;
+    margin-top: 10px;
+}
+.racestxt ul li p{
+    background-color: none;
+    color: white;
+    padding: 10%;
+    text-align: justify;
+}
+.racestxt ul li p a {
+    color: gold;
+}
+.racestxt ul li:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(0);
+}
+footer{
+    font-style: none;
+    min-height: 150px;
+    width: auto;
+    background-color: black;
+    padding: 10px 10% 10px 10%;
+}
+footer h3 {
+    color: aliceblue;
+    margin: 10px;
+}
+footer span {
+    color: wheat;
+    margin: 10px;
+}
